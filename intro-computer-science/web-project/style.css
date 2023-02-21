@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body,
 a {
@@ -9,6 +10,7 @@ a {
 .navbar {
   display: flex;
   background-color: #000;
+  height: 100px;
 }
 
 .div-list {
@@ -30,7 +32,7 @@ a {
 
 .nav-name {
   color: #fff;
-  margin: 31px 185px 31px 100px;
+  margin: 25px 185px 31px 100px;
   font-size: 36px;
   font-weight: 500;
   white-space: no;
@@ -73,4 +75,36 @@ a {
   width: 40px;
   height: 40px;
   margin: 10px 5px;
+}
+
+.container {
+  margin: 20px 100px 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.foto-perfil {
+  width: 345px;
+  height: 400px;
+}
+
+.content-container {
+  flex: 1;
+  text-align: center;
+}
+
+.titulo-about {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  margin-left: 100px;
 }
