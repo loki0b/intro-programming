@@ -5,6 +5,7 @@ body,
 a {
   margin: 0;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
@@ -23,6 +24,8 @@ a {
 .nav-list-ul {
   list-style-type: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-name,
@@ -82,7 +85,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
 }
 
 .foto-perfil {
@@ -91,20 +93,107 @@ a {
 }
 
 .content-container {
+  margin-left: 30px;
+  height: 100%;
   flex: 1;
   text-align: center;
 }
 
 .titulo-about {
+  margin-left: 100px;
   font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: 500;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 .about {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 28px;
   margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-name {
+    margin: 25px 0;
+    text-align: center;
+  }
+
+  .div-list {
+    margin: 0;
+  }
+
+  .nav-list-ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .nav-list-li {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-list {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .nav-list-ul {
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-name {
+    margin: 10px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .nav-list-li {
+    margin: 10px 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .foto-perfil {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-container {
+    margin: 20px 0;
+  }
+
+  .titulo-about {
+    margin-left: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .about {
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+  }
 }
