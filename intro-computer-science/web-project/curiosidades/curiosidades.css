@@ -143,6 +143,18 @@ body {
   .nav-list-li {
     margin: 10px 0;
   }
+
+  #h1-musica {
+    margin: 0px 31px;
+  }
+
+  #spotify-icon {
+    display: none;
+  }
+
+  .playlist {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -173,6 +185,18 @@ body {
 
   .nav-list-li {
     margin: 10px 0;
+  }
+
+  #h1-musica {
+    margin: 0px 31px;
+  }
+
+  .audiovisual-content {
+    margin-right: auto;
+  }
+
+  #h1-musica {
+    margin: 150px 31px 0px 31px;
   }
 }
 
@@ -238,8 +262,29 @@ img {
     padding: 20px;
     text-align: center;
   }
+
+  .audiovisual-content {
+    margin-right: auto;
+  }
+
+  #h1-musica {
+    margin: 150px 31px 0px 31px;
+  }
+}
+
+.playlist {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+#spotify-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 150px;
 }
 
 #h1-musica {
-  margin: 0px 31px;
+  margin: 150px 31px 0px 31px;
 }
