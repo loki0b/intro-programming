@@ -4,7 +4,8 @@
 /* estilo padrao header e footer*/
 
 body,
-a {
+a,
+p {
   margin: 0;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -117,89 +118,6 @@ body {
   margin-left: 100px;
 }
 
-/* responsivo padrao header e footer */
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-name {
-    margin: 25px 0;
-    text-align: center;
-  }
-
-  .div-list {
-    margin: 0;
-  }
-
-  .nav-list-ul {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  .nav-list-li {
-    margin: 10px 0;
-  }
-
-  #h1-musica {
-    margin: 0px 31px;
-  }
-
-  #spotify-icon {
-    display: none;
-  }
-
-  .playlist {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .navbar {
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .div-list {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .nav-list-ul {
-    flex-direction: column;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-name {
-    margin: 10px;
-    font-size: 28px;
-    text-align: center;
-  }
-
-  .nav-list-li {
-    margin: 10px 0;
-  }
-
-  #h1-musica {
-    margin: 0px 31px;
-  }
-
-  .audiovisual-content {
-    margin-right: auto;
-  }
-
-  #h1-musica {
-    margin: 150px 31px 0px 31px;
-  }
-}
-
 /* estilos internos curiosidades */
 
 .pagina-curiosidade {
@@ -214,8 +132,6 @@ img {
   margin-left: 50px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  font-weight: 400px;
-  width: 824;
   line-height: 52px;
 }
 
@@ -224,67 +140,130 @@ img {
 }
 
 .container-principal {
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .container-content {
   display: flex;
-  margin-bottom: 50px;
-}
-
-.img-content {
-  width: 1000px;
+  margin: 100px 0px 50px 0px;
 }
 
 .h1-content {
-  padding: 0px 90px;
+  padding: 0px 50px;
   align-self: center;
 }
 
-/* responsivo curiosidade */
-
-@media screen and (max-width: 768px) {
-  .pagina-curiosidade {
-    padding: 50px 20px;
-  }
-
-  .container-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .img-content {
-    max-width: 100%;
-  }
-
-  .h1-content {
-    padding: 20px;
-    text-align: center;
-  }
-
-  .audiovisual-content {
-    margin-right: auto;
-  }
-
-  #h1-musica {
-    margin: 150px 31px 0px 31px;
-  }
-}
-
 .playlist {
-  font-family: "Roboto", sans-serif;
   font-size: 13px;
   text-align: center;
   margin-top: 12px;
 }
 
-#spotify-icon {
+.spotify-icon {
   width: 40px;
   height: 40px;
-  margin-left: 150px;
+  margin: 5px;
 }
 
 #h1-musica {
-  margin: 150px 31px 0px 31px;
+  margin: 30px 31px 0px 31px;
+}
+
+.img-main-loki {
+  max-width: 100%;
+}
+
+.container-musica-div {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.spotify-link {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+/* responsivo padrao header e footer */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-name {
+    margin: 10px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .nav-list-ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-list-li {
+    margin: 10px 0;
+  }
+
+  #spotify-icon {
+    display: none;
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  #audiovisual-nome {
+    text-align: center;
+  }
+
+  .div-list {
+    margin-left: 0;
+  }
+
+  .nav-list-li {
+    margin: 10px 0;
+  }
+
+  .spotify-link {
+    display: none;
+  }
+}
+
+/* responsivo curiosidade */
+
+@media screen and (max-width: 768px) {
+  .h1-curiosidades {
+    font-size: 15px;
+    line-height: 42px;
+  }
+
+  .container-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  #h1-musica {
+    margin-bottom: 20px;
+  }
+
+  .jogos-content {
+    flex-direction: column-reverse;
+  }
+
+  .img-content {
+    max-width: 100%;
+  }
 }
