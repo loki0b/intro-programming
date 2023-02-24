@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 body,
 a {
@@ -8,6 +8,7 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+/* estilos navbar */
 .navbar {
   display: flex;
   background-color: #000;
@@ -42,6 +43,7 @@ a {
 }
 
 .nav-list-li {
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: #fff;
@@ -51,8 +53,62 @@ a {
 .nav-list-li:hover {
   color: #84e;
   transition-delay: 0.1s;
+  border-bottom: #84d solid;
+  font-weight: 500;
 }
 
+/* Estilos about */
+.container {
+  gap: 50px;
+  margin: 20px 100px 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+}
+
+.titulo-about {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.about {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#contato {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  line-height: 0px;
+}
+
+.foto-perfil {
+  border-radius: 5px;
+}
+
+.ext-links {
+  color: #000;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+.ext-links:hover {
+  font-weight: 500;
+  color: #84e;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+/* Estilos footer */
 .footer {
   width: 100%;
   background-color: #000;
@@ -78,45 +134,12 @@ a {
   margin: 10px 5px;
 }
 
-.container {
-  margin: 20px 100px 40px 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+footer ul li a img:hover {
+  width: 50px;
+  height: 50px;
 }
 
-.content-container {
-  margin-left: 30px;
-  height: 100%;
-  flex: 1;
-  text-align: center;
-}
-
-.titulo-about {
-  margin-left: 100px;
-  font-family: "Poppins", sans-serif;
-  font-size: 32px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.about {
-  font-size: 20px;
-  line-height: 28px;
-  margin-left: 100px;
-}
-
-#contato {
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-  font-size: 30px;
-  line-height: 0px;
-}
-
-.foto-perfil {
-  border-radius: 5px;
-}
-
+/* Responsivo */
 @media only screen and (max-width: 768px) {
   .navbar {
     height: auto;
@@ -153,20 +176,21 @@ a {
   }
 
   .content-container {
-    margin: 20px 0;
+    margin-top: 20px;
   }
 
   .titulo-about {
-    margin-left: 0;
-    font-size: 24px;
+    margin: 0px;
+    font-size: 34px;
     text-align: center;
+    line-height: 38px;
   }
 
   .about {
-    margin-left: 0;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     text-align: justify;
+    text-align: center;
   }
 
   .div-list {
@@ -179,5 +203,9 @@ a {
 
   #contato {
     display: none;
+  }
+
+  .container {
+    gap: 0px;
   }
 }
