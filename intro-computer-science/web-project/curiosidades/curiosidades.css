@@ -11,7 +11,7 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-body {
+img {
   width: 100%;
 }
 
@@ -131,10 +131,6 @@ body {
   display: block;
 }
 
-img {
-  width: 100%;
-}
-
 .h1-curiosidades {
   margin-left: 50px;
   font-family: "Poppins", sans-serif;
@@ -157,8 +153,16 @@ img {
 }
 
 .h1-content {
-  padding: 0px 50px;
   align-self: center;
+  margin: 50px;
+}
+
+.img-content {
+  border-radius: 10px 0px 0px 10px;
+}
+
+#img-jogo {
+  border-radius: 0px 10px 10px 0px;
 }
 
 .playlist {
@@ -177,14 +181,11 @@ img {
   margin: 30px 31px 0px 31px;
 }
 
-.img-main-loki {
-  max-width: 100%;
-}
-
 .container-musica-div {
   display: flex;
   flex-direction: column;
   align-self: center;
+  margin: 50px;
 }
 
 .spotify-link {
@@ -231,10 +232,6 @@ img {
     display: none;
   }
 
-  #audiovisual-nome {
-    text-align: center;
-  }
-
   .div-list {
     margin-left: 0px;
     margin-right: 0px;
@@ -264,7 +261,11 @@ img {
   .container-content {
     flex-direction: column;
     align-items: center;
-    margin-top: 0px;
+    margin: 0px;
+  }
+
+  .container-musica-div {
+    margin: 0px;
   }
 
   #h1-musica {
@@ -275,7 +276,18 @@ img {
     flex-direction: column-reverse;
   }
 
-  .img-content {
-    max-width: 100%;
+  #container-secundario {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .img-content,
+  img-jogo {
+    border-radius: 0px;
+  }
+
+  .h1-content {
+    align-self: center;
+    margin: 50px 0px 20px 0px;
   }
 }
