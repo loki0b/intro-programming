@@ -18,11 +18,13 @@ a {
   margin-left: auto;
   justify-content: center;
   align-items: center;
+  margin-right: 50px;
 }
 
 .nav-list-ul {
   list-style-type: none;
   display: flex;
+  margin-right: 20px;
 }
 
 .nav-name,
@@ -42,7 +44,7 @@ a {
   font-size: 24px;
   font-weight: 400;
   color: #fff;
-  margin: 32px;
+  margin: 20px;
 }
 
 .nav-list-li:hover {

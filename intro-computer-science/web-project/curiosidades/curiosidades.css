@@ -26,6 +26,7 @@ body {
   margin-left: auto;
   justify-content: center;
   align-items: center;
+  margin-right: 50px;
 }
 
 .nav-list-ul {
@@ -51,7 +52,7 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #fff;
-  margin: 32px;
+  margin: 20px;
 }
 
 .nav-list-li:hover {
@@ -62,6 +63,13 @@ body {
 .footer {
   width: 100%;
   background-color: #000;
+}
+
+#contato {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  line-height: 0px;
 }
 
 .svg-ul {
@@ -228,7 +236,8 @@ img {
   }
 
   .div-list {
-    margin-left: 0;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .nav-list-li {
@@ -236,6 +245,10 @@ img {
   }
 
   .spotify-link {
+    display: none;
+  }
+
+  #contato {
     display: none;
   }
 }

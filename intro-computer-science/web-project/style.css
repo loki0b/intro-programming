@@ -19,6 +19,7 @@ a {
   margin-left: auto;
   justify-content: center;
   align-items: center;
+  margin-right: 50px;
 }
 
 .nav-list-ul {
@@ -44,7 +45,7 @@ a {
   font-size: 24px;
   font-weight: 400;
   color: #fff;
-  margin: 32px;
+  margin: 20px;
 }
 
 .nav-list-li:hover {
@@ -105,9 +106,15 @@ a {
   margin-left: 100px;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
+#contato {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  line-height: 0px;
+}
+
+.foto-perfil {
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -134,10 +141,6 @@ a {
     text-align: center;
   }
 
-  .nav-list-li {
-    margin: 10px 0;
-  }
-
   .container {
     flex-direction: column;
     align-items: center;
@@ -145,8 +148,8 @@ a {
   }
 
   .foto-perfil {
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 50%;
   }
 
   .content-container {
@@ -172,5 +175,9 @@ a {
 
   .nav-list-li {
     margin: 10px 0;
+  }
+
+  #contato {
+    display: none;
   }
 }
