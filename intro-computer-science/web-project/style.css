@@ -53,8 +53,6 @@ a {
 .nav-list-li:hover {
   color: #84e;
   transition-delay: 0.1s;
-  border-bottom: #84d solid;
-  font-weight: 500;
 }
 
 /* Estilos about */
@@ -95,16 +93,19 @@ a {
   border-radius: 5px;
 }
 
+:hover.foto-perfil {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
 .ext-links {
   color: #000;
   font-weight: 400;
-  text-decoration-line: underline;
 }
 
 .ext-links:hover {
   font-weight: 500;
   color: #84e;
-  text-transform: uppercase;
   display: inline-block;
 }
 
@@ -135,8 +136,8 @@ a {
 }
 
 footer ul li a img:hover {
-  width: 50px;
-  height: 50px;
+  transform: scale(1.2);
+  transition: 0.1s;
 }
 
 /* Responsivo */

@@ -58,9 +58,7 @@ img {
 
 .nav-list-li:hover {
   color: #84e;
-  transition-delay: 0.1s;
-  border-bottom: #84d solid;
-  font-weight: 500;
+  transition-delay: 0.09s;
 }
 
 /* estilos footer */
@@ -97,8 +95,7 @@ img {
 }
 
 footer ul li a img:hover {
-  width: 50px;
-  height: 50px;
+  transform: scale(1.2);
 }
 
 /* estilos geral curiosidades */
@@ -158,8 +155,7 @@ footer ul li a img:hover {
 }
 
 .spotify-icon:hover {
-  width: 50px;
-  height: 50px;
+  transform: scale(1.2);
 }
 
 #h1-musica {
@@ -177,6 +173,16 @@ footer ul li a img:hover {
   display: flex;
   flex-direction: column;
   place-items: center;
+}
+
+:hover.img-content {
+  transform: scale(1.04);
+  transition: 0.3s;
+}
+
+:hover.img-main {
+  transform: scale(1.04);
+  transition: 0.3s;
 }
 
 /* responsivo padrao header e footer */
