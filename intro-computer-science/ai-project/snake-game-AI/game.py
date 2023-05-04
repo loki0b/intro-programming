@@ -6,7 +6,7 @@ import numpy as np
 
 # general config
 BLOCK_SIZE = 20
-SPEED = 10
+SPEED = 50
 
 # RGB colors
 WHITE = (255, 255, 255)
